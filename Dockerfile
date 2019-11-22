@@ -8,7 +8,9 @@ RUN apt-get install aria2 -y
 RUN wget -O ariang.zip --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/1.1.4/AriaNg-1.1.4-AllInOne.zip && unzip ariang.zip -d . && rm -rf ariang.zip
 RUN curl https://getcaddy.com | bash -s personal
 
+VOLUME ["/root/.aria2", "/root/.config/rclone"]
 EXPOSE 2015 6800
+CMD [ "aria2c" ]
 ENTRYPOINT ["caddy"]
 
 
