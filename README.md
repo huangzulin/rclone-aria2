@@ -1,1 +1,1 @@
-docker run -v rclone.conf:/root/.config/rclone/rclone.conf huangzulin/rclone-aria2
+docker run -d --name rclone-aria2 -v rclone.conf:/root/.config/rclone/rclone.conf -p 2015:2015 -p 6800:6800 huangzulin/rclone-aria2
