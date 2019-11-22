@@ -1,7 +1,7 @@
 FROM ubuntu
 LABEL MAINTAINER="huangzulin"
 
-RUN apt-get update && apt-get install curl -y
+RUN apt-get update && apt-get install curl unzip -y
 RUN curl https://rclone.org/install.sh | bash
 COPY config/aria2 ./.aria2
 RUN apt-get install aria2 -y
