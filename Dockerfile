@@ -12,7 +12,6 @@ RUN curl https://getcaddy.com | bash -s personal
 VOLUME ["/root/.aria2", "/root/.config/rclone"]
 EXPOSE 2015 6800
 CMD [ "./init.sh" ]
-ENTRYPOINT ["caddy"]
 
 
 
