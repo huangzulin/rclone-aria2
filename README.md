@@ -1,0 +1,1 @@
+docker run -v rclone.conf:/root/.config/rclone/rclone.conf huangzulin/rclone-aria2
