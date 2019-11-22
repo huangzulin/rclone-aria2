@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install curl unzip wget -y
 RUN wget -O rclone.zip https://downloads.rclone.org/rclone-current-linux-amd64.zip \ 
     && unzip rclone.zip -d . \ 
     && mv rclone-*-linux-*/rclone /usr/bin \
-    && rm rclone-*-linux-* -rf
+    && rm rclone-*-linux-* -rf \
     && rm rclone.zip 
 
 COPY aria2 /root/.aria2
