@@ -12,7 +12,7 @@ RUN chmod +x init.sh
 
 VOLUME ["/root/.aria2", "/root/.config/rclone"]
 EXPOSE 2015 6800
-ENTRYPOINT [ "init.sh" ]
+ENTRYPOINT [ "~/init.sh" ]
 
 
 
