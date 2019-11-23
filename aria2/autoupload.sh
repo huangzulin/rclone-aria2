@@ -33,8 +33,8 @@ Upload(){
 	retry=0
 	while [ $retry -le $retry_num -a -e "${uploadpath}" ]; do
 		[ $retry != 0 ] && echo && echo -e "Upload failed! Retry ${retry}/${retry_num} ..." && echo
-		rclone move -v "${uploadpath}" "${remotepath}"
-		rclone rmdirs -v "${downloadpath}" --leave-root
+		rclone move ${RCLONE_OPTS} -v "${uploadpath}" "${remotepath}"
+		rclone rmdirs ${RCLONE_OPTS} -v "${downloadpath}" --leave-root
 		retry=$(($retry+1))
 	done
 	[ -e "${uploadpath}" ] && echo && echo -e "Upload failed: ${uploadpath}" && echo

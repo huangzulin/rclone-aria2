@@ -8,4 +8,4 @@ chmod +x /root/.aria2/delete.sh
 
 echo > /root/.aria2/aria2.session
 
-rclone config --config /root/.config/rclone/rclone.conf & aria2c --conf-path=/root/.aria2/aria2.conf & caddy
+rclone config ${RCLONE_OPTS} & aria2c --conf-path=/root/.aria2/aria2.conf & caddy

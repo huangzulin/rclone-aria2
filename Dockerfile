@@ -1,5 +1,6 @@
 FROM ubuntu
 LABEL MAINTAINER="huangzulin"
+ENV RCLONE_OPTS="--config /config/rclone.conf"
 
 RUN apt-get update && apt-get install curl unzip wget -y
 RUN wget -O rclone.zip https://downloads.rclone.org/rclone-current-linux-amd64.zip \ 
