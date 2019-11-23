@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #=================================================
 #   Description: Get trackers and add to aria2.conf
 #   Lisence: MIT

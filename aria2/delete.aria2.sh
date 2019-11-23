@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #=================================================
 #	Description: Delete .aria2 file after Aria2 download is complete
 #	Lisence: MIT

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #=================================================
 #	Description: Aria2 download completes calling Rclone upload
 #	Lisence: MIT

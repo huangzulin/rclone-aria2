@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #=================================================
 #	Description: Display Aria2 download information when paused
 #	Lisence: MIT

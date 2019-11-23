@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 chmod +x /root/.aria2/autoupload.sh
 

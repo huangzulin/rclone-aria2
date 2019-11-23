@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #=================================================
 #	Description: Delete files after Aria2 download error
 #	Lisence: MIT
