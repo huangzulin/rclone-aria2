@@ -18,7 +18,7 @@ RUN wget -O ariang.zip --no-check-certificate https://github.com/mayswind/AriaNg
 RUN curl https://getcaddy.com | bash -s personal
 RUN chmod +x /root/init.sh
 
-VOLUME ["/root/.aria2", "/root/.config/rclone"]
+VOLUME ["/root/.aria2", "/config"]
 EXPOSE 2015 6800
 ENTRYPOINT [ "/root/init.sh" ]
 
