@@ -4,9 +4,10 @@
 
 1. 下载rclone [https://rclone.org/downloads](https://rclone.org/downloads) 
 
-2. 创建onedrive类型的 rclone.conf,`remote`是硬编码的，你不应该改变它。
-```bash
-rclone config create remote onedrive
+2. 创建onedrive类型的 rclone.conf,`remote`是硬编码的，你不应该改变它。文件放在 `$HOME\.config\rclone\rclone.conf`
+```powershell
+$drive_id=New-Guid
+rclone config create remote onedrive drive-type personal drive-id $drive_id
 ```
 3. 运行docker容器，rclone.conf通过文件夹挂载。
 ```bash
@@ -20,9 +21,10 @@ https://www.baidu.com/img/bd_logo1.png
 ---
 ## use ariang as aria2 web UI,after downloded
 1. download rclone [https://rclone.org/downloads](https://rclone.org/downloads)  
-2. create a type onedrive rclone.conf,`remote` is hardcode here,you should not change it.  
-```bash
-rclone config create remote onedrive
+2. create a type onedrive rclone.conf,`remote` is hardcode here,you should not change it. file stroe at `$HOME\.config\rclone\rclone.conf`
+```powershell
+$drive_id=New-Guid
+rclone config create remote onedrive drive-type personal drive-id $drive_id
 ```
 3. run docker container, rclone.conf should be mount in the directory.   
 ```bash
