@@ -4,7 +4,7 @@
 
 1. 下载rclone [https://rclone.org/downloads](https://rclone.org/downloads) 
 
-2. 创建onedrive类型的 rclone.conf,远程名称为`remote`，你不应该改变它。文件放在 `$HOME\.config\rclone\rclone.conf`
+2. 创建rclone.conf,远程名称为`remote`。可以在 `$HOME\.config\rclone\rclone.conf` 找到生成的文件。
 ```powershell
 rclone config
 ```
@@ -20,7 +20,7 @@ https://www.baidu.com/img/bd_logo1.png
 ---
 ## use ariang as aria2 web UI,after downloded
 1. download rclone [https://rclone.org/downloads](https://rclone.org/downloads)  
-2. create a type onedrive rclone.conf,remote name is `remote`,you should not change it. file stroe at `$HOME\.config\rclone\rclone.conf`
+2. create rclone.conf,remote name is `remote`. file stroe at `$HOME\.config\rclone\rclone.conf`
 ```powershell
 rclone config
 ```
