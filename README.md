@@ -1,4 +1,5 @@
-
+[![](https://images.microbadger.com/badges/image/huangzulin/rclone-aria2.svg)](https://microbadger.com/images/huangzulin/rclone-aria2 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/huangzulin/rclone-aria2.svg)](https://microbadger.com/images/huangzulin/rclone-aria2 "Get your own version badge on microbadger.com")
 
 ## 使用ariang作为aria2的web UI，下载完成后通过rclone同步到远程。
 
